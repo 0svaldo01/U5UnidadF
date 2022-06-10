@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="U5UnidadF.Views.ListaPeliculasView" BackgroundColor="#1d1d27">
+
+    <ScrollView>
+        
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10,20,10,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".40*"></ColumnDefinition>
+                            <ColumnDefinition Width=".60*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Column="0" Grid.RowSpan="4"  Source="https://baphonotes.files.wordpress.com/2017/12/kimi-no-na-wa-full-2057835.jpg"></Image>
+                        <Label Grid.Column="1" Grid.Row="0" TextColor="White" Text="Kimi no nawa"></Label>
+                        <Label Grid.Column="1" Grid.Row="1" TextColor="White" Text="106 min"></Label>
+                        <Label Grid.Column="1" Grid.Row="2" TextColor="White"  Text="Anime,Romance,Fantasia"></Label>
+                        <Label Grid.Column="1" Grid.Row="3" TextColor="White" Text="Makoto Shinkai"></Label>
+                        <Label Grid.Column="1" Grid.Row="4" TextColor="White" Text="8.8"></Label>
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </ScrollView>
+
+</ContentPage>
