@@ -11,7 +11,8 @@ namespace U5UnidadF
         {
             InitializeComponent();
 
-            MainPage = new ListaPeliculasView();
+            MainPage = new NavigationPage(new Views.ListaPeliculasView());
+
         }
 
         protected override void OnStart()
